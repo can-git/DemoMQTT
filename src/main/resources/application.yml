@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: demoMQTT
+
+
+mqtt:
+  broker:
+    url: tcp://localhost:1883
+#    url: tcp://172.17.0.2:1883
+  client:
+    id: springMqttClient
+  topic: sampleTopic
