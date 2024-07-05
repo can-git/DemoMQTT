@@ -74,6 +74,7 @@ public class MqttConfig {
     public MessageHandler messageHandler() {
         return message -> {
             String payload = message.getPayload().toString();
+            System.out.println(message);
             demoServices.addMessage(Integer.parseInt(payload));
 
         };
